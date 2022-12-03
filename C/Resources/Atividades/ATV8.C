@@ -17,7 +17,7 @@ int checkConteudoByOrderOfReference(int vetConteudo[],int vetIndex[])
     printf("%d\n",result);
     i++;
   }
-  
+  return result;
 }
 
 int main(int argc, char const *argv[])
