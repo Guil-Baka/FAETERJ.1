@@ -1,7 +1,7 @@
 # Ignorar coisas compiladas com executavel #
 ############################################
 *.exe
-
+*.exe~
 
 # Pastas geradas pela IDE ou SO #
 .vscode
