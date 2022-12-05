@@ -7,7 +7,8 @@
 //questão de analise podia ser facilmente adaptavel para resolver a ATV6
 //Inicialmente eu ia identificar a ordem e atribuir os valores maiores que N 
 //a um outro vetor chamado vetorMaiores para exibir após N e outro chamado
-//vetorMenores para exibir antes de N
+//vetorMenores para exibir antes de N porém essa solução é bem melhor levando
+// em consideração que ela também me volta os valores em ordem crescente
 
 int sortBySize(int array[], int tamanhoVetor, int iFuncAnterior, int numero) 
 {
