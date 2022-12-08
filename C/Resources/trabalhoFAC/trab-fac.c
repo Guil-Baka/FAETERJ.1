@@ -23,49 +23,58 @@ void main ()
   // fflush(stdout);
 	do 
 	{
-		
-
 	if ((num<8)&&(num>0))
 	{
 		switch (num)
 		{
 			case 1:
-      result = inserir(&vet, TAM);
-			// printf ("\n %d", result);
+        result = inserir(&vet, TAM);
+        funcShowArrayAndIndex(vet, TAM);
+        num = -1;
 			break;
       case 2:
-			removeNumero(&vet, TAM);
-      funcShowArrayAndIndex(vet,TAM);
+			  removeNumero(&vet, TAM);
+        funcShowArrayAndIndex(vet,TAM);
 			//funcao acha valor e exclui valor
-			break;
-			
+        num = -1;
+      break;
 			case 3:
       // excluir valor na posição X
-			excluirNumeroNaPosicao(vet,TAM);
+			  excluirNumeroNaPosicao(vet,TAM);
+        num = -1;
+			break;
+			case 4:				
+			  alterar(vet,TAM);
+        num = -1;
 			break;
 				
-			case 4:
-				
-				alterar(vet,TAM);
-				break;
-				
 			case 5:
-				result=buscar(vet, TAM);
-				if(result!=-1)
+			  result=buscar(vet, TAM);
+			  if(result!=-1)
         {
           printf("\nO numero %d se encontra na posicao %d\n",vet[result],result);
         }else
         {
           printf("\nRetorno %d. Numero nao existe no vetor\n",result);
         }
-				break;
+        num = -1;
+			break;
 				
 			case 6:
 				exibir (vet, TAM);
-				break;
+				num = -1;
+      break;
 			
 		}
 	}
+  if (num == -1)
+  {
+    printf (" \n\nMenu: \n 1-inserir novo numero. \n 2-excluir valor. \n");
+  	printf (" 3-excluir valor da posicao desejada. \n 4-alterar valor. \n");
+	  printf (" 5-pesquisar valor. \n 6-exibir vetor. \n 7-fechar programa.\n");
+	  printf (" Insira a opcao desejada: ");
+	  scanf ("%d", &num);
+  } 
 	else
 	{
 		printf ("Esse numero eh invalido, tente novamente: ");
