@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+//Autores:
+// Guilherme de Almeida Martins
+// Guinevere Siqueira Afonseca
+
 #define TAM 10
 #define TRUE 1
 #define FALSE 0
