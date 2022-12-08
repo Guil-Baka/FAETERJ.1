@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <math.h>
+#include <locale.h>
 // Desenvolver uma função que, dados um
 // número inteiro n e um vetor contendo
 // quant valores inteiros, altere a disposição
