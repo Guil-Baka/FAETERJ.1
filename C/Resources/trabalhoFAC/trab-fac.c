@@ -14,11 +14,7 @@ void main ()
 	int vet[TAM]={0,10,20,30,40,50,60,70,80,90};
 	int num=0, bus, i, result;
 
-	printf (" Menu: \n 1-inserir novo numero. \n 2-excluir valor. \n");
-	printf (" 3-excluir valor da posicao desejada. \n 4-alterar valor. \n");
-	printf (" 5-pesquisar valor. \n 6-exibir vetor. \n 7-fechar programa.\n");
-	printf (" Insira a opcao desejada: ");
-	scanf ("%d", &num);
+	num = menu();
 
   // fflush(stdout);
 	do 
@@ -66,23 +62,18 @@ void main ()
       break;
 			
 		}
-	}
-  if (num == -1)
-  {
-    printf (" \n\nMenu: \n 1-inserir novo numero. \n 2-excluir valor. \n");
-  	printf (" 3-excluir valor da posicao desejada. \n 4-alterar valor. \n");
-	  printf (" 5-pesquisar valor. \n 6-exibir vetor. \n 7-fechar programa.\n");
-	  printf (" Insira a opcao desejada: ");
-	  scanf ("%d", &num);
-  } 
-	else
+	}else
 	{
 		printf ("Esse numero eh invalido, tente novamente: ");
 		scanf ("%d", &num);
 		//esse achei lindinho. e funciona.
 	}
+  if (num == -1)
+  {
+    num = menu();
+  } 
 } while (num!=7);
-	printf ("fim do programa.");
+	printf ("\n Fim do programa.");
 	//yey agr falta todo o resto ;-;
 }
 
@@ -252,4 +243,15 @@ int exibir(int vet[], int tamanho)
 		printf ("%d", vet[i]);
 	}
 	//o unico decente pq tbm eh ridiculo.
+}
+
+int menu()
+{
+  int num;
+    printf (" \n\nMenu: \n 1-inserir novo numero. \n 2-excluir valor. \n");
+  	printf (" 3-excluir valor da posicao desejada. \n 4-alterar valor. \n");
+	  printf (" 5-pesquisar valor. \n 6-exibir vetor. \n 7-fechar programa.\n");
+	  printf (" Insira a opcao desejada: ");
+	  scanf ("%d", &num);
+  return num;
 }
