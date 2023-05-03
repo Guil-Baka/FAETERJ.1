@@ -6,7 +6,7 @@ int main(int argc, char const *argv[])
   float gravidade,pesoPlaneta,pesoTerra;
   int planetNum;
 
-  printf("\nQual é o seu peso gordola?");
+  printf("\nQual é o seu peso?");
   scanf("%f", &pesoTerra);
 
   printf("\nDigite o numero correspondente ao planeta\n");

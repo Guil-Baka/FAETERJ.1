@@ -19,6 +19,7 @@ void main ()
   // fflush(stdout);
 	do 
 	{
+    
 	if ((num<8)&&(num>0))
 	{
 		switch (num)
