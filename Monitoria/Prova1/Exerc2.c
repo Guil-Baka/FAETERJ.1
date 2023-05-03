@@ -2,8 +2,8 @@
 
 void main()
 {
-  int n, valor = 0, maiorNum;
-  float media = 0;
+  int n, maiorNum;
+  float valor,media = 0;
 
   printf("Digite o N: ");
   scanf("%d", &n);
